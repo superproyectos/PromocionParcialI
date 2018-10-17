@@ -26,7 +26,7 @@ public class User
         deliveryAddresses.add(deliveryAddress);
     }
 
-    public boolean isAdult(LocalDate localDate)
+    public boolean isAdult()
     {
         return ChronoUnit.YEARS.between(birthDate, LocalDate.now())>=18;
     }
